@@ -1,3 +1,34 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Codespaces
+Marketplace
+Explore
+ 
+@DharmarajaP 
+DharmarajaP
+/
+Translationapp
+Public
+Cannot fork because you own this repository and are not a member of any organizations.
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+Settings
+Translationapp/app.py /
+@DharmarajaP
+DharmarajaP Update app.py
+Latest commit bea3a29 tomorrow
+ History
+ 1 contributor
+65 lines (53 sloc)  2.15 KB
+
 #pip install streamlit
 #pip install google-cloud-speech
 #pip install speechRecognition
@@ -55,7 +86,7 @@ def main():
             raw_text = st.text_area("Source Language Text", output_text)
             submitted = st.button("Submit")
             if submitted:
-            	langage_iden = st.button("Language Identification")
+                langage_iden = st.button("Language Identification")
                 if langage_iden:
                     result2 = prediction1 (raw_text)
     else:
