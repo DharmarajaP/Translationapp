@@ -42,32 +42,8 @@ def main():
                 
             st.text_area("Output", output_text)
             
-             
-            raw_text = ""
-                                           
-            result2 = ""
-            st.write(1)
             langage_iden = st.form_submit_button("Language Identification")
-            st.write(2)
-            if langage_iden:
-                st.write(3)                        
-                result2 = prediction1 (raw_text)
             
-            col1, col2 = st.columns(2)
-            
-            with col1:
-                source_task_choice = st.selectbox("Source Language",result2)
-            with col2:
-                target_task_choice = st.selectbox("Targat Language",result2)
-                
-            submit_button = st.form_submit_button("Translate")
-            if submit_button:
-                #result = prediction1 (raw_text)   
-                #raw_text1 = st.text_area("Translated language text")
-                
-                if target_task_choice == "French":
-                    title = st.text_input('Translated language text')
- 
     else:
         st.subheader("About")
 
