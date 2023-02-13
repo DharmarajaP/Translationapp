@@ -62,7 +62,7 @@ def main():
             with col1:
                 source_task_choice = st.selectbox("Source Language",result2)
             with col2:
-                target_task_choice = st.selectbox("Targat Language",result2):
+                target_task_choice = st.selectbox("Targat Language",result2)
                     
     else:
         st.subheader("About")
