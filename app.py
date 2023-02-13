@@ -16,7 +16,7 @@ classifier1 = pkl.load(pickle_in1)
 def prediction1(raw_text):
     st.write(raw_text)
     prediction1 = classifier1.predict([raw_text])  
-    st.write("After prediction1")
+    st.write(prediction1)
     return prediction1
 
 def main():
