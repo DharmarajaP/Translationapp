@@ -5,6 +5,11 @@
 #pipwin install pyaudio
 
 import streamlit as st 
+import pickle as pkl  
+
+# loading in the model to predict on the data  
+pickle_in1 = open(r'C:\Users\Dharma\lrmodel_new.pckl', 'rb')  
+classifier1 = pkl.load(pickle_in1)  
 
 def main():
     st.title("Intelligent Language translator")
