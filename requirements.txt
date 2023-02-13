@@ -1,0 +1,14 @@
+streamlit
+string
+random
+pickle
+io
+os
+json
+wave
+numpy 
+speech_recognition
+speech
+speech_v1
+
+
