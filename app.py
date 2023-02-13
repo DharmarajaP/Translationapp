@@ -63,12 +63,7 @@ def main():
                 st.write(3)
                 result2 = prediction1 (raw_text)
                 st.write(result2)
-            #col1, col2 = st.columns(2)
             
-            #with col1:
-            source_task_choice = st.selectbox("Source Language",result2)
-            #with col2:
-                #target_task_choice = st.selectbox("Targat Language",result2)
                     
     else:
         st.subheader("About")
