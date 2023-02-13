@@ -60,7 +60,7 @@ def main():
             if (st.button('Language Identification')):
                 st.write(3)
                 result2 = prediction1 (raw_text)
-                st.write(4)
+                st.write(result2)
             col1, col2 = st.columns(2)
             
             with col1:
