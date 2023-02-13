@@ -5,20 +5,6 @@
 #pipwin install pyaudio
 
 import streamlit as st 
-import string 
-import random 
-import pickle as pkl  
-import io
-import os
-from io import StringIO
-from google.cloud import speech_v1
-from google.cloud import speech
-import json
-from google.cloud.speech_v1.types import RecognitionAudio
-import speech_recognition as sr
-import wave
-import numpy as np
-
 
 def main():
     st.title("Intelligent Language translator")
