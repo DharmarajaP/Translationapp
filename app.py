@@ -6,14 +6,14 @@
 
 import streamlit as st 
 import pickle as pkl  
-import Credentials
-from google.oauth2.credentials import Credentials
+#import Credentials
+#from google.oauth2.credentials import Credentials
 
 # loading in the model to predict on the data  
 pickle_in1 = open('lrmodel_new.pckl', 'rb')  
 classifier1 = pkl.load(pickle_in1)  
 
-creds = Credentials.from_authorized_user_info(info=os.environ)
+#creds = Credentials.from_authorized_user_info(info=os.environ)
 
 def main():
     st.title("Intelligent Language translator")
