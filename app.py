@@ -13,6 +13,10 @@ import pickle as pkl
 pickle_in1 = open('lrmodel_new.pckl', 'rb')  
 classifier1 = pkl.load(pickle_in1)  
 
+def prediction1(raw_text):    
+    prediction1 = classifier1.predict([raw_text])  
+    return prediction1
+
 def main():
     st.title("Intelligent Language translator")
     menu = ["Home","About"]
@@ -49,10 +53,11 @@ def main():
                 text_input = st.text_input("Enter some text:")
                 output_text = "You entered: " + text_input   
                 
-            st.text_area("Output", output_text)
+            raw_text = st.text_area("Source Language Text", output_text)
             
             langage_iden = st.form_submit_button("Language Identification")
-            
+            if langage_iden:
+		result2 = prediction1 (raw_text)
     else:
         st.subheader("About")
 
