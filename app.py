@@ -54,8 +54,7 @@ def main():
                 text_input = st.text_input("Enter some text:")
                 output_text = "You entered: " + text_input   
                 
-            x
-            
+          
                     
     else:
         st.subheader("About")
