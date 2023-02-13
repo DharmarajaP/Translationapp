@@ -57,7 +57,7 @@ def main():
             
             langage_iden = st.form_submit_button("Language Identification")
             if langage_iden:
-		result2 = prediction1 (raw_text)
+                result2 = prediction1 (raw_text)
     else:
         st.subheader("About")
 
