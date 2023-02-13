@@ -13,7 +13,7 @@ import pickle as pkl
 pickle_in1 = open('lrmodel_new.pckl', 'rb')  
 classifier1 = pkl.load(pickle_in1)  
 
-ef main():
+def main():
     st.title("Intelligent Language translator")
     menu = ["Home","About"]
     choice = st.sidebar.selectbox("Menu",menu)
