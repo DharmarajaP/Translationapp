@@ -13,16 +13,7 @@ import pickle as pkl
 pickle_in1 = open('lrmodel_new.pckl', 'rb')  
 classifier1 = pkl.load(pickle_in1)  
 
-# Load the private key as a JSON file
-private_key_file = '/c/Users/Dharma\folkloric-ocean-377504-674432cd7e4a.JSON'
-with open(private_key_file) as f:
-    private_key = json.load(f)
-
-# Set the environment variable for the private key
-os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = private_key_file
-#creds = Credentials.from_authorized_user_info(info=os.environ)
-
-def main():
+ef main():
     st.title("Intelligent Language translator")
     menu = ["Home","About"]
     choice = st.sidebar.selectbox("Menu",menu)
@@ -50,8 +41,10 @@ def main():
                 text_input = st.text_input("Enter some text:")
                 output_text = "You entered: " + text_input
             elif input_type == "File":
-                text_input = st.text_input("Enter some text:")
-                output_text = "You entered: " + text_input
+                file = st.file_uploader("Upload a file:")
+                if file:
+                    file_content = file.read().decode("utf-8")
+                    output_text  = file_content
             elif input_type == "Voice":
                 text_input = st.text_input("Enter some text:")
                 output_text = "You entered: " + text_input   
