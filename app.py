@@ -147,7 +147,7 @@ def main():
                 st.write(audio_file)
                 if audio_file is not None:
                     path_in = audio_file.name
-                    folder_path = r"C:\Users\Dharma\\"
+                    #folder_path = r"C:\Users\Dharma\\"
                     output_text = transcribe_voice_input1 (folder_path+path_in)
             elif input_type == "File":
                 file = st.file_uploader("Upload a file:")
