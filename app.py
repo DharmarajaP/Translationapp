@@ -14,7 +14,7 @@ pickle_in1 = open('lrmodel_new.pckl', 'rb')
 classifier1 = pkl.load(pickle_in1)  
 
 # Load the private key as a JSON file
-private_key_file = r'C:\Users\Dharma\folkloric-ocean-377504-674432cd7e4a.json'
+private_key_file = '/c/Users/Dharma\folkloric-ocean-377504-674432cd7e4a.JSON'
 with open(private_key_file) as f:
     private_key = json.load(f)
 
