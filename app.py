@@ -14,7 +14,7 @@ def main():
     
     if choice == "Home":
         #st.subheader("Home")
-        #form
+        st.write("Streamlit version:", st.__version__) 
         with st.form(key="myform",clear_on_submit=True):
 
             input_type = st.empty()
