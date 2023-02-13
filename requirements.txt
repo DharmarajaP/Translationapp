@@ -1,20 +1,4 @@
 streamlit==0.81.1
 scikit-learn
 string 
-re
-codecs
-numpy
-pandas
-seaborn
-matplotlib.pyplot
-feature_extraction
-import matplotlib.pyplot as plt
-sklearn 
-MultinomialNB
-LogisticRegression
-DecisionTreeClassifier
-pipeline
-train_test_split
-RandomForestClassifier
-metrics
-import itertools
+
