@@ -13,11 +13,7 @@ import pickle as pkl
 pickle_in1 = open('lrmodel_new.pckl', 'rb')  
 classifier1 = pkl.load(pickle_in1)  
 
-def prediction1(raw_text):
-    st.write(raw_text)
-    prediction1 = classifier1.predict([raw_text])  
-    st.write(prediction1)
-    return prediction1
+
 
 def main():
     st.title("Intelligent Language translator")
