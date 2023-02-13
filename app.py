@@ -54,10 +54,10 @@ def main():
                 
             raw_text = st.text_area("Source Language Text", output_text)
             st.write(1) 
-            submitted = st.button("Language Identification")
+            #submitted = st.button("Language Identification")
             st.write(2)	
             result2 = ""		
-            if submitted:
+            if (st.button('Language Identification'))::
                 st.write(3)
                 result2 = prediction1 (raw_text)
                 st.write(4)
