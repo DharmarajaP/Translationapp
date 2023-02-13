@@ -53,11 +53,14 @@ def main():
                 output_text = "You entered: " + text_input   
                 
             raw_text = st.text_area("Source Language Text", output_text)
+            st.write(1) 
             submitted = st.button("Language Identification")
+            st.write(2)	
             result2 = ""		
             if submitted:
+                st.write(3)
                 result2 = prediction1 (raw_text)
-            
+                st.write(4)
             col1, col2 = st.columns(2)
             
             with col1:
