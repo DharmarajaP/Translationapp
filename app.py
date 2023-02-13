@@ -53,7 +53,7 @@ def main():
                 output_text = "You entered: " + text_input   
                 
             raw_text = st.text_area("Source Language Text", output_text)
-            st.write(1) 
+            st.write(raw_text) 
             #submitted = st.button("Language Identification")
             st.write(2)	
             result2 = ""		
