@@ -13,6 +13,13 @@ import pickle as pkl
 pickle_in1 = open('lrmodel_new.pckl', 'rb')  
 classifier1 = pkl.load(pickle_in1)  
 
+# Load the private key as a JSON file
+private_key_file = r'C:\Users\Dharma\folkloric-ocean-377504-674432cd7e4a.json'
+with open(private_key_file) as f:
+    private_key = json.load(f)
+
+# Set the environment variable for the private key
+os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = private_key_file
 #creds = Credentials.from_authorized_user_info(info=os.environ)
 
 def main():
