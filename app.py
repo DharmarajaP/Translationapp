@@ -54,15 +54,7 @@ def main():
                 text_input = st.text_input("Enter some text:")
                 output_text = "You entered: " + text_input   
                 
-            raw_text = st.text_area("Source Language Text", output_text)
-            st.write(raw_text) 
-            #submitted = st.button("Language Identification")
-            st.write(2)	
-            result2 = ""		
-            if (st.button('Language Identification')):
-                st.write(3)
-                result2 = prediction1 (raw_text)
-                st.write(result2)
+            x
             
                     
     else:
