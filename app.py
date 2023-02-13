@@ -6,6 +6,7 @@
 
 import streamlit as st 
 import pickle as pkl  
+import Credentials
 from google.oauth2.credentials import Credentials
 
 # loading in the model to predict on the data  
