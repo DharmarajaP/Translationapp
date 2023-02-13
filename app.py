@@ -57,7 +57,7 @@ def main():
             #submitted = st.button("Language Identification")
             st.write(2)	
             result2 = ""		
-            if (st.button('Language Identification'))::
+            if (st.button('Language Identification')):
                 st.write(3)
                 result2 = prediction1 (raw_text)
                 st.write(4)
