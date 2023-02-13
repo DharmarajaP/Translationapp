@@ -25,7 +25,6 @@ def main():
     
     if choice == "Home":
         #st.subheader("Home")
-        st.write("Streamlit version:", st.__version__) 
         with st.form(key="myform"):
 
             input_type = st.empty()
@@ -54,11 +53,11 @@ def main():
                 output_text = "You entered: " + text_input   
                 
             raw_text = st.text_area("Source Language Text", output_text)
-            submitted = st.form_submit_button("Submit")
-		
-            langage_iden = st.form_submit_button("Language Identification")
-            if langage_iden:
-                result2 = prediction1 (raw_text)
+            submitted = st.button("Submit")
+            if submitted:
+            langage_iden = st.button("Language Identification")
+                if langage_iden:
+                    result2 = prediction1 (raw_text)
     else:
         st.subheader("About")
 
