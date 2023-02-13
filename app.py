@@ -54,7 +54,8 @@ def main():
                 output_text = "You entered: " + text_input   
                 
             raw_text = st.text_area("Source Language Text", output_text)
-            
+            submitted = st.form_submit_button("Submit")
+		
             langage_iden = st.form_submit_button("Language Identification")
             if langage_iden:
                 result2 = prediction1 (raw_text)
